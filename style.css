@@ -1,266 +1,115 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.navbar {
+  }
+  .navbar{
+    display: flex;
     width: 100%;
-    height: 70px;
-    background-color: rgb(211, 240, 240);
-    display: flex;
-    padding: 30px 0px;
-    justify-content: space-around;
-}
-
-.navbar__lists {
-    list-style-type: none;
-    display: flex;
-    font-family: "Open Sans", sans-serif;
-    gap: 20px;
-    font-size: 14px;
-
-}
-
-.basqa {
-    background-color: rgb(88, 187, 198);
-    border-radius: 40px;
-
-}
-
-nav {
-    width: 100%;
-    height: 730px;
-    background-color: rgb(105, 205, 255);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.birincisi {
-    width: 400px;
-    background-color: rgb(244, 196, 66);
-    height: 300px;
-}
-
-.ikincisi {
-    width: 500px;
-    background-color: rgb(244, 196, 66);
-    height: 400px;
-
-}
-
-.bir {
-    width: 100%;
-    height: 740px;
-    background-color: rgb(34, 210, 116);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.basliq {
-    width: 800px;
-    height: 150px;
-    display: flex;
+    justify-content: space-between;
     background-color: white;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-
-}
-
-.basliq2 {
-    width: 600px;
-    height: 60px;
-    background-color: yellow;
-}
-
-.basliq {
-    width: 1000px;
-    height: 250px;
+    padding: 30px 0px;
+  
+  }   
+  .navbar__lists{
     display: flex;
+    list-style-type: none; 
+    gap: 20px;
+    align-items: center;
+  }
+  .chercive{
+    width: 100%;
+    /* background-color: rgb(122, 100, 100); */
+    background-image: url('https://www.w3schools.com/w3images/architect.jpg');
+    padding: 300px 20px;
+    display: flex;
+    gap: 30px;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-
-}
-
-.basliq div {
-    width: 800px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    height: 50px;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* border: 1px solid black; */
+    text-align: center;
+    position: relative;
+    /* width: 24%; */
+  }
+  
+  .grid-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .badge{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 22px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+  }
+  .banner{
+    width: 100%;
+    height: 500px ;
+    background-color: white;
+    color: white;
+    display: flex;
+  padding: 40px 30px;
+  gap: 30px;
+  }
+  .banner2{
+    width: 50%;
     height: 200px;
-    background-color: yellow;
-}
-
-
-.iki {
+    background-color: white;
+  
+  }
+  
+  .sonuncu{
     width: 100%;
-    height: 730px;
-    background-color: rgb(218, 86, 86);
+    background-color:white
+    padding: 30px 20px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.ucuncu {
-    width: 400px;
-    background-color: yellowgreen;
-    height: 300px;
-}
-
-.dorduncu {
-    width: 200px;
-    background-color: yellowgreen;
-    height: 500px;
-}
-
-
-
-
-
-
-
-.end {
-    width: 100%;
-    height: 800px;
-    background-color: pink;
-    display: flex;
+    gap: 20px;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 60px;
-}
-
-.bashliq2 {
-    width: 500px;
+    
+  }
+  .meta{
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    padding: 100px 20px;
+    gap: 20px;
+    
+  }
+  .beta{
+    width: 100%;
+    background-color:white;
+    margin: 10px 0px;
+  }
+  .beta > input{
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .sonblok{
+    width: 100%;
     height: 100px;
-    background-color: rgb(174, 174, 210);
-
-}
-
-.qutular2 {
-    width: 900px;
-    height: 600px;
+    background-color:black;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-.sol {
-    display: flex;
-    width: 500px;
-    height: 600px;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.sag {
-    display: flex;
-    width: 500px;
-    height: 600px;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.sol div,
-.sag div {
-    width: 400px;
-    height: 200px;
-    background-color: rgb(191, 102, 191);
-}
-
-.section1 {
-    width: 100%;
-    height: 600px;
-    background-color: rgb(233, 144, 197);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-}
-
-.tam {
-    width: 1400px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.yuxari {
-    width: 500px;
-    height: 100px;
-    background-color: rgb(235, 235, 44);
-}
-
-.asagi {
-    width: 1000px;
-    height: 200px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.asagi div {
-    width: 300px;
-    height: 150px;
-    background-color: rgb(192, 221, 33);
-}
-
-footer {
-    width: 100%;
-    height: 500px;
-    background-color: rgb(49, 129, 69);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer {
-    width: 1500px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.hamisi {
-    width: 1500px;
-    height: 250px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 50px;
-}
-
-.hamisi .birinci1 {
-    width: 300px;
-    height: 200px;
-    background-color: rgb(232, 85, 85);
-}
-
-.hamisi .ikinci2 {
-    width: 200px;
-    height: 200px;
-    background-color: rgb(232, 85, 85);
-}
-
-.son {
-    width: 800px;
-    height: 100px;
-    background-color: rgb(240, 140, 177);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+  }
