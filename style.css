@@ -1,115 +1,52 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .navbar{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    background-color: white;
-    padding: 30px 0px;
-  
-  }   
-  .navbar__lists{
-    display: flex;
-    list-style-type: none; 
-    gap: 20px;
-    align-items: center;
-  }
-  .chercive{
-    width: 100%;
-    /* background-color: rgb(122, 100, 100); */
-    background-image: url('https://www.w3schools.com/w3images/architect.jpg');
-    padding: 300px 20px;
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 20px;
-    background-color: white;
-    padding: 20px;
-    height: 50px;
-  }
-  
-  .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    /* border: 1px solid black; */
-    text-align: center;
-    position: relative;
-    /* width: 24%; */
-  }
-  
-  .grid-item img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .badge{
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 22px;
-    color: white;
-    background-color: black;
-    padding: 10px;
-  }
-  .banner{
-    width: 100%;
-    height: 500px ;
-    background-color: white;
-    color: white;
-    display: flex;
-  padding: 40px 30px;
-  gap: 30px;
-  }
-  .banner2{
-    width: 50%;
-    height: 200px;
-    background-color: white;
-  
-  }
-  
-  .sonuncu{
-    width: 100%;
-    background-color:white;
-    padding: 30px 20px;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  .meta{
-    width: 100%;
-    height: 400px;
-    background-color: white;
-    padding: 100px 20px;
-    gap: 20px;
-    
-  }
-  .beta{
-    width: 100%;
-    background-color:white;
-    margin: 10px 0px;
-  }
-  .beta > input{
-    width: 100%;
-    padding: 10px;
-  }
-  
-  .sonblok{
-    width: 100%;
-    height: 100px;
-    background-color:black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50vh 50vh;
+}
+
+
+.item1{
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background-color: rgb(224, 69, 26);
+  text-align: center;
+  align-content: center;
+}
+
+.item4 {
+  grid-row: 2/3;
+  grid-column: 2/4;
+}
+
+.item2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.item3{
+  background-color: rgb(230, 85, 18);
+  text-align: center;
+  align-content: center;
+}
+.item4 img{
+  width: 100%;
+ height: 100%;
+  object-fit: cover;
+}
+
+.btn{
+  font-size: 20px;
+  color: white;
+  background-color: rgb(224, 69, 26);
+  border: 2px solid white;
+  margin-top: 20px;
+
+}

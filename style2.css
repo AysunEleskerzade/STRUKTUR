@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section1{
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.section1 > div{
+    width: 400px;
+    height: 500px;
+    background-color: rgb(10, 10, 105);
+}
+form{
+    width: 100%;
+    height: 100%;
+}
+p{
+    font-family: "Dancing Script", cursive;
+    font-size: 25px;
+    font-size: 35px;
+    position: relative;
+    color: rgb(232, 148, 12);
+}
+p::after{
+    content:"" ;
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: rgb(232, 148, 12);
+    top: 20px;
+    top: 25px;
+}
+input{
+    width: 45%;
+    padding: 10px;
+    margin: 10px 0px;
+
+}
+textarea{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    
+}
+select{
+    padding: 10px;
+
+}
+.section2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+
+}
+button{
+    background-color: rgb(203, 203, 20);
+    padding: 10PX 140PX;
+    border: 0;
+    color: white;
+    width: 100%;
+}
+.div{
+    width: 100%;
+    padding: 20px;
+}
+h1{
+    color: white;
+}
+.section2{
+    position: relative;
+}
